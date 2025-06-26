@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroAdvisor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+  <header>
+    <h1>AgroAdvisor</h1>
+  </header>
+  <main>
+    <div class="chat-container">
+      <div class="chat-box" id="chat-box"></div>
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type your question..." onkeypress="handleKeyPress(event)">
+        <button id ="send-button" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>
