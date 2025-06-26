@@ -49,3 +49,49 @@
    ```bash
    git clone https://github.com/nejjx/Capstone-Project.git
    cd Capstone-Project
+
+2. **Create and activate a Python virtual environment**
+
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate     # On Windows: venv\Scripts\activate
+
+3. **Install required packages**
+
+   ```bash
+   pip install flask pandas scikit-learn xgboost geopy langchain
+
+4. **Set environment variables**
+   Configure API keys needed for Google Gemini Pro, Open-Meteo, or any other services you use.
+
+5. **Run the Flask application**
+
+   ```bash
+   python app.py
+   
+6. **Open your browser and go to**
+
+   ```bash
+   http://localhost:5000
+
+---
+
+## Notes & Future Work
+
+- Current model and LLM usage require valid API credentials and internet access.
+
+- Future improvements could include expanding supported crops, refining yield model accuracy with more datasets, and enhancing the conversational UI.
+
+---
+
+## Credits
+
+- Developed by the AgroAdvisor team as part of the AI/Analytics Capstone Project at University of Technology Sydney supervised by Dr. YiFei Dong
+  
+- Team members: Neja Abeywickrama, Neha Yogeswaran, Hanlin Liao, Lang Li
+
+- **Neja Abeywickrama** — Project lead, responsible for LLM and API integration, data exploration, creating the comprehensive Google Colab notebook (initial draft), and assisting with backend integration.
+
+- Thanks to open-source libraries and APIs that power this project.
+
+
