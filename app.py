@@ -47,7 +47,7 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(current_directory, "xgb_model.pkl")
 crop_prediction_model = pickle.load(open(model_path, "rb"))
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCsAmxS0aDzRx6isQpC9qSCerDiZtnYkVY"
+os.environ["GOOGLE_API_KEY"] = "[Add your API key here]"
 
 geolocator = Nominatim(user_agent="geo_locator")
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro")
